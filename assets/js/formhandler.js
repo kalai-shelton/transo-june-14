@@ -61,7 +61,7 @@ function ajax(method, url, data, success, error) {
   xhr.open(method, url);
   xhr.setRequestHeader("Accept", "application/json");
   
-  //xhr.setRequestHeader("Access-Control-Allow-Origin", "*");
+  xhr.setRequestHeader("Access-Control-Allow-Origin", "*");
   xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
   xhr.onreadystatechange = function() {
     if (xhr.readyState !== XMLHttpRequest.DONE) return;
