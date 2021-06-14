@@ -1,0 +1,53 @@
+<footer class="site-footer">
+  <div class="container" >
+    <div class="row">
+        <div class="col-md-4 site-footer-logo"><a href="{{ .Site.BaseURL }}">
+          <img src="{{ "/images/transo-white-logo.svg" | absURL }}" alt="logo-footer">
+       </div>
+      
+      
+        
+ {{ with .Site.Params.footer.social }}
+      <!--<div class="col-md-2 col-md-6">
+        <div class="site-footer-widget" >
+          <div class="site-footer-widget-links" style="display:flex">
+            {{ range .link }}
+              <a href="{{ .url }}">{{ .name }}</a>
+            {{ end }}
+          </div>
+        </div>
+      </div>-->
+      
+      <div class="footer-links " >
+        <ul>
+        <li><a href="/oursolution" class="ourP" >Solution</a></li>
+        <li><a href="/features" class="aboutU"> Features</a></li>
+        <li><a href="/industry" class="contactU">Industry</a></li>
+      </ul>
+    </div>
+    <div class="footer-links1" >
+      <ul>
+     <!-- <li><a href="/resources" class="ourP" >Resources</a></li>-->
+      <li><a href="/about" class="aboutU"> About </a></li>
+      <li><a href="/contact" class="contactU">Contact Us</a></li>
+      <li><a href="/privacypolicy" class="contactU">Privacy Policy</a></li>
+    </ul>
+  </div>
+      <div class="footer-logos">
+       <a href="https://twitter.com/" class="fa fa-twitter"></a>
+      <a href="https://linked.com/" class="fa fa-linkedin"></a>
+      </div>
+    </div>
+      {{ end }}
+        
+      
+    </div>
+  </div>
+</footer>
+
+{{ $formhandler := resources.Get "js/formhandler.js" | minify }}
+<script src="{{ $formhandler.Permalink }}"></script>
+{{ $vendor := resources.Get "js/vendor.js" | minify }}
+<script src="{{ $vendor.Permalink }}"></script>
+{{ $script := resources.Get "js/script.js" | minify }}
+<script src="{{ $script.Permalink }}"></script>

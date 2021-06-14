@@ -1,0 +1,83 @@
+<section class="site-contact">
+  <div class="container" style="padding-top: 40px; ">
+    <h2 class="site-contact-title text-center " style="padding-bottom: 10px;">
+      {{ .Params.title | safeHTML }}
+    </h2>
+   <!-- <p class="text-center"> {{.Params.heading}}</p>-->
+    <div class="row conSection1">
+
+      <div class="col-md-6">
+        <div class="site-contact-form">
+          <form id="contact-form" action="{{ .Site.Params.salesFormUrl }}" method="POST">
+            <div class="row">
+              <div class="col-md-12">
+                <input type="text" class="form-control " name="full-name" id="full-name" placeholder="Full Name *" required>
+              </div>
+              <div class="col-md-12">
+                <input type="email" class="form-control " name="email" id="email" placeholder="Email *"required>
+              </div>
+              <div class="col-md-12">
+                <input type="text" class="form-control " name="phone-number" id="phone-number "
+                  placeholder="Phone Number " >
+              </div>
+              <div class="col-md-12">
+                <input type="text" class="form-control " name="organization " id="organization "
+                  placeholder="Organization *" required>
+              </div>
+              <div class="col-md-12">
+                <input type="text" class="form-control" name="industry" id="industry" placeholder="Industry">
+              </div>
+
+              <div class="col-md-12">
+                <textarea class="form-control" id="message" name="message" rows="3" placeholder="Message"></textarea>
+              </div>
+              <!---Hidden INputs-->
+              <input type=hidden name="oid" value="00D2x000006ONji">
+              <input type=hidden name="retURL" value="https://transo.in/">
+
+                    <input type="hidden" id="utmSrc" name="utmSrc" value="">
+                            <input type="hidden" id="utmCamp" name="utmCamp" value="">
+                            <input type="hidden" id="clickId" name="clickId" value="">
+                            <div class="col-md-12" style="padding-bottom:20px;">
+                                
+                              <span class="">
+                                  By sending these details, I agree to the terms and conditions.
+                              </span>
+                      </div>
+
+              <div class="col-md-12">
+                <button aria-label="contactus"  type="submit" class="btn-contact" id="contact-form-button">
+                  <span class="btn-area">
+                    <span data-text="Send Message" >
+                      Send
+                    </span>
+                  </span>
+                </button>
+              </div>
+              <p id="contact-form-status"></p>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="col-md-10">
+       <img class=" contactImg" src="{{.Params.contactImg}}" />
+      
+    </div>
+      
+    <div class="address  text-center">
+      <a href="https://www.google.com/maps/place/TRANSO/@12.9826268,77.6384179,21z/data=!4m5!3m4!1s0x0:0x687d2a3178ed356e!8m2!3d12.9826871!4d77.6385196" target="_blank">
+    <p class="lead pb-3" style="color:#FAAD26 ;"> <i class="fa fa-map-marker fa-5x pr-5" style="color:#FAAD26;" aria-hidden="true"></i><span class=" pb-3 border-bottom border-warning">CORPORATE ADDRESS</span></p></a>
+    <div class="address-text  ">
+      <p class=" "> TRANSO · 630, 1st Main Rd,</p>
+       <p>  Binnamangala, Hoysala Nagar,</p>
+         <p> Indiranagar, Bengaluru,</p>
+        
+         <p>  Karnataka 560038, India.</p>
+        </p>
+      </div>
+      </div>
+    </div>
+  </div>
+
+</section>

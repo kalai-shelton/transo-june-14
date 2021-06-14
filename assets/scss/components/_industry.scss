@@ -1,0 +1,204 @@
+.container {
+  max-width: 90%;
+}
+.industry-bg {
+ background-size: cover;
+  background: url("/images/industry/industryHeroImg.png") no-repeat center;
+  background-size:cover;
+  height: 70vh;
+  background-position: center;
+  @include mobile {
+    background: url("/images/mobile-images/mobileBanner4.png") no-repeat center;
+    background-size: cover;
+    height: 100vw;
+  }
+}
+.industry-tab-section {
+  margin-top: 50px;
+}
+.industry-tab-content {
+  text-align: center;
+}
+
+.industrytabs h2 {
+  display: flex;
+  text-decoration: none;
+  font-size: 26px;
+  text-decoration: none;
+  margin-right: 15px;
+  text-align: center;
+  font-family: Montserrat;
+  padding: 10px;
+  @include mobile {
+    font-size: 8px;
+    margin-right: 6px;
+    padding: 2px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #bebfbf;
+}
+
+a:hover {
+  color: #faad26;
+  text-decoration: none;
+}
+a.active {
+  border-bottom: solid #faad26 !important;
+  border-width: 3px;
+  color: #3a3a3c;
+}
+
+.industryHeader {
+  font-weight: bold;
+}
+.threeplbody {
+  justify-content: center;
+  text-align: center;
+}
+.ThreePLTab {
+  padding-top: 100px;
+  @include mobile {
+    padding-top: 5px;
+  }
+}
+.industrySectionP {
+  padding-top: 80px;
+  }
+.threeplh1 {
+  color: $text-color-primary;
+  font-weight: 300;
+  margin-top: 0px;
+  @include mobile{
+    padding-left: 16px;
+  }
+}
+.threeplh2{
+  @include mobile{
+    padding-left: 16px; 
+  }
+
+}
+
+.threePLPara {
+  padding: 20px 120px 20px 120px;
+  text-align: center;
+  @include mobile {
+    padding-left: 16px; 
+    text-align: left;
+  }
+}
+
+.ThreePLBlock {
+  padding: 20px 20px 150px 20px;
+  background-color: $background-color-primary;
+  color: $text-color-tertiary;
+  border-radius: 20px;
+  margin: 20px;
+  height: 400px;
+  
+}
+.ThreePLBlock p {
+  padding-top: 20px;
+
+  color: $text-color-tertiary;
+  font-weight: 300;
+}
+.threeplcasestudy {
+  padding: 30px 30px 30px 30px;
+  background-color: $background-color-tertiary;
+  margin: 50px 5px;
+  width: 100%;
+  height: 200px;
+  text-align:justify;
+  @include mobile {
+    padding: 0;
+    margin: 0;
+    height: auto;
+    width: auto;
+  }
+}
+.threeplcasestudyImg {
+  width: 120px;
+  margin-top: 15px;
+  margin-left: 25px;
+  @include mobile {
+    width: 80px;
+    margin-top: 30px;
+    align-items: center;
+  }
+}
+.threeplcasestudyh4 {
+  text-align: left;
+  @include mobile {
+    text-align: center;
+  }
+}
+.threeplcasestudyP {
+  text-align: left;
+}
+.threeplcasestudy1 {
+  //align-items: center;
+  
+  @include mobile {
+   // text-align: justify;
+  }
+}
+.threeplcasestudy p {
+  padding-top: 20px;
+  text-align: justify;
+
+}
+
+.threeplImg {
+  width: 100%;
+}
+
+.heroIMG {
+  width: 42%;
+  padding-bottom: 202px;
+  @include mobile {
+    width: 90%;
+    font-size: 20px;
+    line-height: 20px;
+    padding-bottom: 242px;
+  }
+}
+.fmgcBlock {
+  display: flex;
+  text-align: center;
+  font-size: 17px;
+  padding: 20px 25px;
+  font-weight: 0;
+}
+.gmgblockhead {
+  text-align: left;
+}
+.threeplBlock {
+  display: flex;
+  text-align: left;
+  font-size: 18px;
+  padding: 20px 25px;
+  font-weight: 0;
+}
+.threeplBlock h5 {
+  //padding-left: 5px;
+  text-align: center;
+}
+
+.tpl {
+  padding-left: 0px;
+  text-align: left;
+}
+.manufact{
+padding-left: 170px;
+padding-bottom: 80px;
+@include mobile{
+  padding-left: 18px; 
+}
+}
+.portimg{
+  padding-top: 40px;
+}

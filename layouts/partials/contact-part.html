@@ -1,0 +1,59 @@
+
+<section class="contactSection">
+    <div class="container-fluid">
+        <div class="row ">
+            <div class="col-md-6 contactpart align-items-center text-center  ">
+                <h3 class="site-contact-title ">
+                    <span class="contactPartTitle1 ">
+                        {{ .Site.Params.contactPartTitle | safeHTML }}
+                   
+                    {{ .Site.Params.contactPartTitle1 | safeHTML }}
+                </h3> </span>
+                <p class> {{.Site.Params.contactPartC | safeHTML}}
+            </div>
+            <div class="col-md-4 contactpart2">
+                <div class="site-contact-form">
+                    <form id="contact-form" action="{{ .Site.Params.formspreeFormUrl }}" method="POST">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <input type="text" class="form-control" name="full-name" id="full-name"
+                                    placeholder="Name *" required>
+                            </div>
+                            <div class="col-md-12">
+                                <input type="email" class="form-control" name="email" id="email"
+                                    placeholder="Email Address *" required>
+                            </div>
+                            <div class="col-md-12">
+                                <input type="text" class="form-control" name="phone-number" id="phone-number"
+                                    placeholder="Phone Number" required>
+                            </div>
+                            <div class="col-md-12">
+                                <input type="text" class="form-control" name="organization" id="organization"
+                                    placeholder="Organization *" required>
+                            </div>
+                            <input type="hidden" id="utmSrc" name="utmSrc" value="">
+                            <input type="hidden" id="utmCamp" name="utmCamp" value="">
+                            <input type="hidden" id="clickId" name="clickId" value="">
+                            <div class="col-md-12" style="padding-bottom:20px;">
+                                
+                                    <span class="">
+                                        By sending these details, I agree to the terms and conditions.
+                                    </span>
+                            </div>
+                            <div class="col-md-12">
+                                <button aria-label="contact" type="submit" aria-label="contact-form-button" class="btn-contact" id="contact-form-button">
+                                    <span class="btn-area">
+                                        <span data-text="Send Message">
+                                            Send
+                                        </span>
+                                    </span>
+                                </button>
+                            </div>
+                            <p id="contact-form-status"></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
